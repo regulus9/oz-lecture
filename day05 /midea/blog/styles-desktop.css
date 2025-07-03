@@ -1,0 +1,68 @@
+body {
+  max-width: 80vw;
+  text-align: center;
+  font-size: 1rem;
+}
+header {
+  padding: 2rem;
+  border-bottom: 0.2rem solid;
+}
+nav ul {
+  display: flex;
+  line-height: normal;
+  gap: 0.5rem;
+}
+#posts {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.post {
+  padding: 1.5rem;
+  border: 0.2rem solid;
+}
+aside {
+  width: 25vw;
+  padding: 1.5rem;
+  margin-right: 2vw;
+}
+footer {
+  padding: 1.5rem;
+  border-top: 0.2rem;
+  text-align: center;
+}
+/* 태블릿 (최대 1023px) */
+@media (max-width: 1023px) {
+  body {
+    max-width: 90vw;
+  }
+  #posts {
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 1.5rem;
+  }
+  nav ul {
+    line-height: normal 0;
+  }
+  aside {
+    width: 30vw;
+    margin: 0;
+  }
+}
+/* 모바일 (최대 767px) */
+@media (max-width: 767px) {
+  body {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  nav li {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #posts {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  aside {
+    width: 100%;
+    margin: 1rem;
+  }
+}
