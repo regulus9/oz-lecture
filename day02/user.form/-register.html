@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form action="/submit" method="POST">
+        <div>
+        <input type="text" name="username" placeholder="사용자 이름" /><label for="사용자이름"></label>
+        <input type="email" name="email" placeholder="사용자 이메일 주소" /><label for="사용자 이메일 주소"></label>
+        <input type="password" name="password" placeholder="비밀번호" /><label for="비밀번호"></label>
+        <input type="data" name="birthdata" placeholder="생년월일" /><label for="생년월일"></label>
+        <input type="number" name="age" min="18" max="100" placeholder="나이"/><label for="나이"></label>
+        <input type="number" name="range" min="1" max="10" placeholder="서비스 만족도" /><label for="서비스 만족도"></label>
+        </div>
+        <div>
+        <h3>성별을 선택해주세요</h3>
+        <input type="radio" name="gender" value="male" /> 남성<label for="male"></label>
+        <input type="radio" name="gender" value="female" /> 여성<label for="female"></label>
+        <input type="radio" name="gender" value="other" /> 중립<label for="other"></label>
+      </div>
+      <div>
+        <h3>관심사를 선택해주세요</h3>
+        <input type="checkbox" name="hobby" value="coding" /> 코딩<label for="coding"></label>
+        <input type="checkbox" name="hobby" value="gaming" /> 게임<label for="gaming"></label>
+        <input type="checkbox" name="hobby" value="reading" /> 책읽기<label for="reading"></label>
+      </div>
+      <div>
+        <h3>국가를 선택해주세요</h3>
+        <select name="city" multiple>
+          <option value="South Korea">한국</option><label for="한국"></label>
+          <option value="USA">미국</option><label for="미국"></label>
+          <option value="Japan">일본</option><label for="일본"></label>
+          <option value="China">중국</option><label for="중국"></label>
+          <option value="UK">유럽</option><label for="유럽"></label>
+        </select>
+      </div>
+       <button type="submit">제출</button>
+       <button type="reset">초기화</button>
+    </form>
+</body>
+</html>
